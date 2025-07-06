@@ -41,7 +41,7 @@
 /* Roboto font */
 @font-face{
     font-family: 'roboto';
-    src: url('fonts/roboto.ttf');
+    src: url('fonts/RobotoSlab-VariableFont_wght.ttf');
 }
 
 /* The official Steelfinger Studios font designed by Bofner */
@@ -62,7 +62,7 @@ body {
     margin: 0;
     background: #4e91ab;
     font-family: 'roboto';
-    font-size: 24px;
+    font-size: 28px;
     color: #d7d7d7;
 }
 
