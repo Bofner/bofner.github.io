@@ -378,7 +378,7 @@ nav a:hover {
 
 /* Mobile tweaks */
 
-@media (max-width: 640px) {
+@media (max-width: 600px) {
   nav a {
     margin-left: 0.85rem;
   }
@@ -388,12 +388,7 @@ nav a:hover {
   }
 
   .page-title-img {
-  display: block;
-  margin: 0 auto 1rem;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  image-rendering: pixelated; /* keeps your pixels crisp */
+    max-width: 300px;
   }
 
   .footer-inner {
