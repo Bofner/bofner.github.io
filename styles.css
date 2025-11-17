@@ -130,6 +130,11 @@ nav a:hover {
   color: var(--muted);
 }
 
+.hero-actions-about {
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
 /* Remove background silhouette for About page */
 .hero-about::after {
   display: none;
