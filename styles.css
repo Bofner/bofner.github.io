@@ -232,6 +232,7 @@ nav a:hover {
 .page-title-img {
   display: block;
   margin: 0 auto 1rem;
+  width: 100%;
   max-width: 480px;
   height: auto;
   image-rendering: pixelated; /* keeps your pixels crisp */
@@ -386,12 +387,26 @@ nav a:hover {
     padding-top: 3rem;
   }
 
+  .page-title-img {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  image-rendering: pixelated; /* keeps your pixels crisp */
+  }
+
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
   }
   
   .hero-inner-about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-inner.hero-inner-about {
     flex-direction: column;
     text-align: center;
   }
