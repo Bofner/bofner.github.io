@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Steelfinger Studios | Indie Game Studio</title>
+  <!-- Favicon icon! -->
+  <link rel="shortcut icon" type="image/png" href="img/Steelfinger Studios Favicon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+  <img src="img/SteelfingerStudiosLogo.svg" alt="Steelfinger Studios Logo">
+</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+		<a href="tools.html">Tools</a>
+		<a href="demos.html">Demos</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--tools">
+    <div class="container hero-inner">
+      <img
+        class="page-title-img"
+        src="img/tools.svg"
+        alt="Tools"
+      >
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="project-grid">
+      <!-- your game cards here -->
+    </div>
+  </section>
+
+
+    <!-- Highlighted areas -->
+    <section class="pillars">
+      <div class="container grid-3">
+        <article class="card">
+          <h2>Game Boy Tile Converter/Compressor</h2>
+          <p class="project-tags">Aseprite Tool • RLE Tile Compression • Game Boy</p>
+          <img src="img/rle.jpg" alt="Tools Header">
+          <p>Turn Aseprite files into a run length encoding compressed .inc file 
+            using Aseprite's scripting feature. This is a tool we designed spefically
+          for our Game Boy projects, and they wouldn't have been possible without it!</p>
+          <a href="https://github.com/Bofner/GB-RLE-Compression-from-Aseprite" class="card-link">Download →</a>
+          </article>
+
+          <article class="card">
+          <h2>Super Game Boy Palette Exporter</h2>
+          <p class="project-tags">Aseprite Tool • Palette Data Packets • Super Game Boy</p>
+          <img src="img/sgbpalette.jpg" alt="Tools Header">
+          <p>Convert Aseprite palettes into palettes Super Game Boy data packets for use
+            with creating custom SGB palettes for your Game Boy games. This is another one
+            that streamlines graphic development for Game Boy games, specifically those supporting the Super Game Boy.
+          </p>
+          <a href="https://github.com/Bofner/SGB-Palette-Data-Packet-from-Aseprite" class="card-link">Download →</a>
+          </article>
+
+          <article class="card">
+          <h2>Super Game Boy Attribute Exporter</h2>
+          <p class="project-tags">Aseprite Tool • Attribute Packets • Super Game Boy</p>
+          <img src="img/sgbattribute.jpg" alt="Tools Header">
+          <p>Super Game Boy Attributes give compatible games their ability to have more than 4 colors on screen at once.
+            This one pairs great with the Super Game Boy Palette Exporter for creating beautifully colorful scenes
+            on a system that only really supports 2-bit color!
+          </p>
+          <a href="https://github.com/Bofner/SGB-Attribute-from-Aseprite" class="card-link">Download →</a>
+          </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Steelfinger Studios</p>
+      <div class="footer-links">			
+        <a href="https://steelfinger-studios.itch.io/" target="_blank">Itch.io</a>
+		<a href="https://www.youtube.com/@steelfingerstudios" target="_blank">Youtube</a>		
+        <a href="mailto:cam.96.mitchell@gmail.com">Email</a>
+        <!-- Add LinkedIn, YouTube, etc. as needed -->
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

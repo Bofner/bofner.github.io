@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Steelfinger Studios | Indie Game Studio</title>
+  <!-- Favicon icon! -->
+  <link rel="shortcut icon" type="image/png" href="img/Steelfinger Studios Favicon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+  <img src="img/SteelfingerStudiosLogo.svg" alt="Steelfinger Studios Logo">
+</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+		<a href="tools.html">Tools</a>
+		<a href="demos.html">Demos</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+     <section class="hero hero-about">
+      <div class="container hero-inner hero-inner-about">
+        
+        <!-- Left: text -->
+        <div class="hero-text-col">
+          <p class="hero-kicker">Software Engineer, Game Designer, Educator</p>
+          <h1>Cameron Mitchell</h1>
+          <p class="hero-about-text">
+            I'm Cameron, a vintage tech enthusiast and life-long learner living in Japan. 
+            I develop games, software and produce videos and educational content. I created Steelfinger Studios to fulfil my
+            childhood dream of being a game designer. 
+          </p>
+        </div>
+
+        <!-- Right: photo -->
+        <div class="hero-photo-col">
+          <img src="img/cam.jpg" alt="Photo of me">
+        </div>
+
+      </div>
+    </section>
+
+    
+          <!-- Copy/paste more <article> blocks for other games -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Steelfinger Studios</p>
+      <div class="footer-links">			
+        <a href="https://steelfinger-studios.itch.io/" target="_blank">Itch.io</a>
+		<a href="https://www.youtube.com/@steelfingerstudios" target="_blank">Youtube</a>		
+        <a href="mailto:cam.96.mitchell@gmail.com">Email</a>
+        <!-- Add LinkedIn, YouTube, etc. as needed -->
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

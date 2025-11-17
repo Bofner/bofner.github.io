@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Steelfinger Studios | Indie Game Studio</title>
+  <!-- Favicon icon! -->
+  <link rel="shortcut icon" type="image/png" href="img/Steelfinger Studios Favicon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+  <img src="img/SteelfingerStudiosLogo.svg" alt="Steelfinger Studios Logo">
+</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+		<a href="tools.html">Tools</a>
+		<a href="demos.html">Demos</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--demos">
+    <div class="container hero-inner">
+      <img
+        class="page-title-img"
+        src="img/demos.svg"
+        alt="Demos"
+      >
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="project-grid">
+      <!-- your game cards here -->
+    </div>
+  </section>
+
+
+    <!-- Highlighted areas -->
+    <section class="pillars">
+      <div class="container grid-3">
+                  <article class="card">
+          <h2>Game Boy LFSR</h2>
+          <p class="project-tags">RNG • Graphical Interface • Super Game Boy</p>
+          <img src="img/gblfsr.gif" alt="Game Boy LFSR">
+          <p>Tune your own Linear Feedback Shift Register on the go! This was our first larger scale 
+            Game Boy project. This one was made to be an exercise in RNG, but ended up being more of 
+            a lesson on how to implement graphics and controls on the Game Boy. 
+          </p>
+          <a href="https://github.com/Bofner/Game-Boy-LFSR" class="card-link">Download →</a>
+          </article>
+
+        <article class="card">
+          <h2>Country Roads Demo</h2>
+          <p class="project-tags">Interrupts • Audio • Sega Master System</p>
+          <img src="img/countryRoads.gif" alt="Country Roads">
+          <p>This is a demo we made when we were testing out both the audio capabilities, and the
+            raster/parallax effects of the SMS. It's just a humble Country drive with a classic tune
+            arranged by a friend.
+          </p>
+          <a href="https://github.com/Bofner/Country-Roads-SMS" class="card-link">Download →</a>
+          </article>
+
+          <article class="card">
+          <h2>Triangle Puzzle</h2>
+          <p class="project-tags">Puzzle • Z80 Assembly • Sega Master System</p>
+          <img src="img/trianglePuzzle.gif" alt="Triangle Puzzle">
+          <p>An ancient relic made as our first SMS assembly project. A puzzle game with only one solution,
+            based off of a project during graduate school. A fun challenge used to get a grip with the Z80 CPU. 
+          </p>
+          <a href="https://github.com/Bofner/Triangle-Puzzle-SMS" class="card-link">Download →</a>
+          </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Steelfinger Studios</p>
+      <div class="footer-links">			
+        <a href="https://steelfinger-studios.itch.io/" target="_blank">Itch.io</a>
+		<a href="https://www.youtube.com/@steelfingerstudios" target="_blank">Youtube</a>		
+        <a href="mailto:cam.96.mitchell@gmail.com">Email</a>
+        <!-- Add LinkedIn, YouTube, etc. as needed -->
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
