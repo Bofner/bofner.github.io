@@ -317,6 +317,16 @@ nav a:hover {
   overflow: hidden;
 }
 
+.card video {
+
+  width: 100%;
+  height: auto;
+  object-fit: cover;  /* or "cover" if you’re okay with cropping */
+  border-radius: var(--radius);
+  background: #111921;
+  display: flex;
+  overflow: hidden;
+}
 
 /* Projects */
 
