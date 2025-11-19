@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Tonbow";
+  src: url("fonts/pixelfont.woff2") format("woff2"),
+       url("fonts/pixelfont.woff") format("woff"),
+       url("fonts/Tonbow.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --bg: #05060a;
   --bg-alt: #111921;
@@ -260,7 +269,7 @@ nav a:hover {
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));;
   gap: 1.2rem;
 }
 
