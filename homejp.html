@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Steelfinger Studios | Indie Game Studio</title>
+  <!-- Favicon icon! -->
+  <link rel="shortcut icon" type="image/png" href="img/Steelfinger Studios Favicon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+  <img src="img/SteelfingerStudiosLogo.svg" alt="Steelfinger Studios Logo">
+</a>
+      <nav>
+        <a href="index.html">ホーム</a>
+        <a href="games.html">ゲーム</a>
+		<a href="tools.html">道具</a>
+		<a href="demos.html">デモ</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="hero-kicker">A studio dedicated to the art of working within constraints</p>
+          <h1>Embrace Limitations - Express Creativity</h1>
+          <p class="hero-text">
+            At Steelfinger Studios, we believe that limitations are what inspire creativity.
+            We embrace limitations, and thrive working through them to craft games that we
+            want to play, on systems we want to play them on.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlighted areas -->
+    <section class="pillars">
+      <div class="container grid-3">
+        <article class="card">
+          <h2>ゲーム</h2>
+          <p>私達のゲームは8ービットの精神が持っている人の為に作られました。レトロなハードとファンタシーコンソールは得意ですよ！</p>
+          <a href="games.html" class="card-link">プレイしよう！ →</a>
+        </article>
+        
+        <article class="card">
+          <h2>道具</h2>
+          <p>レトロなハードのゲームを作りながら開発の道具を作りました。この道具は自由に使ってください</p>
+		  <a href="tools.html" class="card-link">道具を見る →</a>
+        </article>
+        <article class="card">
+          <h2>デモ</h2>
+          <p>レトロなハードの実験良くしますよ！このデモはその実験の結果です。</p>
+		  <a href="demos.html" class="card-link">見ってみる →</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Steelfinger Studios</p>
+      <div class="footer-links">			
+        <a href="https://steelfinger-studios.itch.io/" target="_blank">Itch.io</a>
+		<a href="https://www.youtube.com/@steelfingerstudios" target="_blank">Youtube</a>		
+        <a href="mailto:steelfingerstudios@gmail.com">Email</a>
+        <!-- Add LinkedIn, YouTube, etc. as needed -->
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -209,13 +209,23 @@ nav a:hover {
   border: 1px solid var(--border);
   background: #111921;
   font-size: 0.9rem;
+  box-shadow: var(--shadow-soft);
 }
 
 .btn.primary {
-  background: linear-gradient(135deg, #ffb347, #ff6b6b);
-  color: #151515;
+  background: #f77c2a;
+  color: #111921;
   border: none;
   box-shadow: var(--shadow-soft);
+}
+
+.btn.tertiary {
+  padding: 0.65rem 1.3rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #95adbe;
+  color: #111921;
+  font-size: 0.9rem;
 }
 
 .page-hero {
