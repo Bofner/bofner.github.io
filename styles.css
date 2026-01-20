@@ -74,14 +74,17 @@ a {
 }
 
 .logo {
-  font-weight: 700;
-  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  height: 96px; /* match the logo exactly */
 }
 
 .logo img {
-  height: 80px;      /* Adjust this! */
-  width: auto;       /* Keeps correct proportions */
-  display: block;    /* Removes extra bottom spacing */
+  height: 96px;
+  width: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  flex-shrink: 0; /* IMPORTANT */
 }
 
 nav a {
