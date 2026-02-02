@@ -481,6 +481,17 @@ nav a:hover {
     margin-left: 0.85rem;
   }
 
+  body {
+    margin: 0;
+    font-family: var(--font-main);
+    color: var(--text);
+    background: radial-gradient(circle at center right, #95adbe 0, #2c4054 5%) ;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
   .hero {
     padding-top: 3rem;
   }
