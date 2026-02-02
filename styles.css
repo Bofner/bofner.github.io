@@ -144,8 +144,10 @@ nav a:hover {
   width: 320px;
   height: 256px;
   border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
   background: #00000000;
-  padding-right: 1rem; /* adjust to taste */
+
 }
 
 .hero .container {
