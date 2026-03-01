@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Steelfinger Studios | Indie Game Studio</title>
+  <!-- Favicon icon! -->
+  <link rel="shortcut icon" type="image/png" href="img/Steelfinger Studios Favicon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+   <img src="img/SteelfingerStudiosLogo.png" alt="Steelfinger Studios Logo">
+</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+		<a href="tools.html">Tools</a>
+		<a href="demos.html">Demos</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--tonbow">
+    <div class="container hero-inner">
+      <img
+        class="page-title-img"
+        src="img/spaceTonbowHeader.png"
+        alt="SpaceTonbow"
+      >
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="project-grid">
+      <!-- your game cards here -->
+    </div>
+  </section>
+
+
+    <!-- Highlighted areas -->
+    <section class="pillars">
+      <div class="container grid-3">
+
+        <article class="card">
+          <h2>Space Tonbow</h2>
+          <p class="project-tags">Arcade/action • 8-bit • Sega Master System</p>
+            <video
+                src="img/Space Tonbow.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                width="320">
+            </video>
+          <p>Our first endeadvor, and a true 8-bit game for the Sega Master System. You are the
+				space-venturing dragonfly in this high-score chasing arcade style action game. Supports
+				the FM sound unit and 縦モード (TATE mode)! </p>
+          <a href="https://steelfinger-studios.itch.io/space-tonbow" class="card-link">Download →</a>
+          </article>
+
+          <article class="card">
+          <h2>Space Tonbow PICO-8</h2>
+          <p class="project-tags">Arcade/Action • Fantasy console • PICO-8</p>
+          <img src = "img/spacetonbow.p8.png">
+          <p>Our first PICO-8 game is a port of our SMS game, Space Tonbow! Now with updated graphics, enemies and audio,
+            enjoy the Space Tonbow experience away from your CRT with the PICO-8 version! </p>
+            <a href="https://steelfinger-studios.itch.io/space-tonbow-for-pico-8" class="card-link">Download or play online! →</a>
+          </article>
+
+        <article class="card">
+          <h2>Space Tonbow GG</h2>
+          <p class="project-tags">Arcade/Action • 8-bit • Sega Game Gear</p>
+          <video
+                src="img/Space Tonbow GG.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                width="320">
+            </video>
+          <p>Take Space Tonbow wherever you go... as long as you've got the double AA's for it! This is a direct port of
+            the SMS version of Space Tonbow, but taking advantage of its beautiful color bit-depth! </p>
+            <a href="https://steelfinger-studios.itch.io/space-tonbow-gg" class="card-link">Download →</a>
+        </article>
+
+        
+
+        
+
+          <article class="card">
+          <h2>???</h2>
+          <p class="project-tags">A Future Steelfinger Studios Experience</p>
+            <img src="img/Question Icon.png" alt="???">
+          <p>Stay tuned! </p>
+            <p class="fake-link">Nothing to download...yet!</p>
+          </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Steelfinger Studios</p>
+      <div class="footer-links">			
+        <a href="https://steelfinger-studios.itch.io/" target="_blank">Itch.io</a>
+		    <a href="https://www.youtube.com/@steelfingerstudios" target="_blank">Youtube</a>		
+        <a href="mailto:steelfingerstudios@gmail.com">Email</a>
+        <!-- Add LinkedIn, YouTube, etc. as needed -->
+      </div>
+      <div class="footer-legal">
+        <p>
+          All trademarks referenced herein are the property of their respective owners.
+          Steelfinger Studios is not affiliated with or endorsed by SEGA or Nintendo.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

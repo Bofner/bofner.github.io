@@ -301,6 +301,11 @@ nav a:hover {
   background: rgba(17, 25, 33, 0.75);
 }
 
+.page-hero--tonbow {
+  /* optional: slightly darker strip behind the header */
+  background: rgba(17, 25, 33, 0.75);
+}
+
 .page-title-img {
   display: block;
   margin: 0 auto 1rem;
