@@ -341,6 +341,10 @@ nav a:hover {
   gap: 1.2rem;
 }
 
+.container.grid-3 {
+  width: min(1139px, 100% - 2rem);
+}
+
 .card {
   background: var(--bg-alt);
   border-radius: var(--radius);
@@ -357,11 +361,15 @@ nav a:hover {
 .card h2 {
   margin-top: 0;
   margin-bottom: 0.4rem;
+  line-height: 1.2;
+  min-height: 2.4em; /* 2 lines at 1.2 line-height, regardless of wrap */
 }
 
 .card p {
   margin: 0.2rem 0 0.8rem;
   color: var(--muted);
+  line-height: 1.2;
+  min-height: 2.4em; /* 2 lines at 1.2 line-height, regardless of wrap */
 }
 
 .card-link {
@@ -383,6 +391,7 @@ nav a:hover {
   background: #111921;
   display: flex;
   overflow: hidden;
+  image-rendering: pixelated
 }
 
 .card video {
