@@ -338,7 +338,7 @@ nav a:hover {
 .grid-3 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.75rem; /* reduced from 1.2rem */
 }
 
