@@ -352,7 +352,7 @@ nav a:hover {
   padding: 1.3rem 1.4rem;
   border: 1px solid var(--border);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-  width: fit-content;
+  width: 368px;       /* 320px image + 44.8px padding + 2px border */
   max-width: 100%;
   flex-shrink: 0;
   display: flex;
@@ -401,6 +401,12 @@ nav a:hover {
   .card img,
   .card video {
     width: 640px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container.grid-3 {
+    width: min(1160px, 100% - 1rem);
   }
 }
 
