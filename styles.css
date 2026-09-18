@@ -412,7 +412,7 @@ nav a:hover {
 
 @media (max-width: 600px) {
   .card {
-    padding: 1.3rem 0.5rem;
+    padding: 1.3rem 1rem;
   }
 }
 
