@@ -336,13 +336,14 @@ nav a:hover {
 }
 
 .grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(367px, 1fr));
-  gap: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem; /* reduced from 1.2rem */
 }
 
 .container.grid-3 {
-  width: min(1139px, 100% - 2rem);
+  width: min(1160px, 100% - 2rem);
 }
 
 .card {
@@ -351,8 +352,8 @@ nav a:hover {
   padding: 1.3rem 1.4rem;
   border: 1px solid var(--border);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-  width: 100%;
-  max-width: 480px;   /* keeps cards uniform */
+  width: 368px;       /* 320px image + 44.8px padding + 2px border, rounded up */
+  flex-shrink: 0;      /* never let it shrink unpredictably */
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
