@@ -388,6 +388,7 @@ nav a:hover {
   color: var(--muted);
   line-height: 1.2;
   min-height: 2.4em; /* 2 lines at 1.2 line-height, regardless of wrap */
+  flex-grow: 1;
 }
 
 .card-link {
@@ -395,9 +396,17 @@ nav a:hover {
   color: var(--accent);
 }
 
+.card p.project-tags {
+  flex-grow: 0;
+}
+
 .card p.fake-link {
   font-size: 0.9rem;
   color: #f77c2a;
+  flex-grow: 0;
+  min-height: 0;
+  margin: 0;
+  line-height: 1.6;
 }
 
 .card img,
