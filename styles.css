@@ -338,12 +338,28 @@ nav a:hover {
 .grid-3 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 0.75rem; /* reduced from 1.2rem */
+  justify-content: flex-start; /* always — centering now comes from container width + margin */
+  gap: 0.75rem;
 }
 
+/* remove any earlier min-width:1160px justify-content toggle — this replaces it */
+
 .container.grid-3 {
-  width: min(1160px, 100% - 2rem);
+  width: min(1160px, 100% - 2rem); /* 3-col tier — unchanged, this part is fine */
+}
+
+@media (max-width: 1179px) and (min-width: 780px) {
+  .container.grid-3 {
+    width: 748px; /* exact fit for 2 cards */
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 779px) {
+  .container.grid-3 {
+    width: min(368px, 100% - 2rem); /* exact fit for 1 card */
+    margin-inline: auto;
+  }
 }
 
 .card {
@@ -397,22 +413,9 @@ nav a:hover {
   image-rendering: pixelated;
 }
 
-@media (min-width: 719px) and (max-width: 779px) {
-  .card img,
-  .card video {
-    width: 640px;
-  }
-}
-
 @media (max-width: 600px) {
   .container.grid-3 {
-    width: min(1160px, 100% - 1rem);
-  }
-}
-
-@media (max-width: 600px) {
-  .card {
-    padding: 1.3rem 1rem;
+    width: min(368px, 100% - 1rem); /* was min(1160px, ...) — now matches the fitted 1-col tier */
   }
 }
 
