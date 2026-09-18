@@ -309,10 +309,29 @@ nav a:hover {
 .page-title-img {
   display: block;
   margin: 0 auto 1rem;
-  width: 100%;
-  max-width: 480px;
+  width: 440px;  /* 5x — closest clean multiple to your old 480px cap */
   height: auto;
-  image-rendering: pixelated; /* keeps your pixels crisp */
+  image-rendering: pixelated;
+}
+
+@media (max-width: 600px) {
+  .page-title-img {
+    width: 264px;  /* 3x — closest clean multiple to your old 300px cap, and small enough to fit even a 320px-wide viewport with room to spare */
+  }
+}
+
+.page-title-img-tonbow {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 448px;  /* 4x — closest clean multiple to your old 480px cap */
+  height: auto;
+  image-rendering: pixelated;
+}
+
+@media (max-width: 600px) {
+  .page-title-img-tonbow {
+    width: 336px;  /* 3x — closest clean multiple to your old 300px cap, and small enough to fit even a 320px-wide viewport with room to spare */
+  }
 }
 
 .page-hero-tagline {
@@ -522,10 +541,6 @@ nav a:hover {
 
   .hero {
     padding-top: 3rem;
-  }
-
-  .page-title-img {
-    max-width: 300px;
   }
 
   .footer-inner {
