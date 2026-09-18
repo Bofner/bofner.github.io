@@ -337,7 +337,7 @@ nav a:hover {
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));;
+  grid-template-columns: repeat(auto-fit, minmax(367px, 1fr));
   gap: 1.2rem;
 }
 
@@ -382,27 +382,24 @@ nav a:hover {
   color: #f77c2a;
 }
 
-.card img {
-
-  width: 100%;
+.card img,
+.card video {
+  width: 320px;
   height: auto;
-  object-fit: cover;  /* or "cover" if you’re okay with cropping */
+  object-fit: cover;
   border-radius: var(--radius);
   background: #111921;
-  display: flex;
+  display: block;
+  margin: 0 auto;
   overflow: hidden;
-  image-rendering: pixelated
+  image-rendering: pixelated;
 }
 
-.card video {
-
-  width: 100%;
-  height: auto;
-  object-fit: cover;  /* or "cover" if you’re okay with cropping */
-  border-radius: var(--radius);
-  background: #111921;
-  display: flex;
-  overflow: hidden;
+@media (max-width: 400px) {
+  .card img,
+  .card video {
+    width: 160px;
+  }
 }
 
 /* Projects */
@@ -503,12 +500,6 @@ nav a:hover {
 
   .page-title-img {
     max-width: 300px;
-  }
-
-  .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.2rem;
   }
 
   .footer-inner {
